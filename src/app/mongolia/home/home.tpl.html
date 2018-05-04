@@ -1,0 +1,71 @@
+<header id="header">
+    <div class="container" role="banner">
+        <div id="navbar" class="navbar-default navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" title="蒙古大营"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-class="{active:nativeId=='home/homePage'}"><a native  href="/home/homePage" ng-click="changeTab('home/homePage')"><i class="glyphicon glyphicon-home"></i>&nbsp;网站首页</a></li>
+                    <li ng-class="{active:nativeId=='home/highLife'}"><a native  href="/home/highLife" ng-click="changeTab('home/highLife')">吃喝玩乐</a></li>
+                    <li ng-class="{active:nativeId=='home/comment'}"><a native  href="/home/comment" ng-click="changeTab('home/comment')">评论留言</a></li>
+                    <li ng-class="{active:nativeId=='home/aboutUs'}"><a native  href="/home/aboutUs" ng-click="changeTab('home/aboutUs')">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mr-homeNav">
+    <div class="mrCont">
+        <!--<div class="seat hidden-xs hidden-sm">您当前的位置是：{{nowParentname}}-->
+            <!--<span ng-if="nowstatename"> > {{nowstatename}}</span>-->
+        <!--</div>-->
+        <div ui-view="content"></div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="ac-gf-footer-legal">
+                <!--<div class="footer-legal-links">-->
+                    <!--<a href="/home/news">大营动态</a>-->
+                    <!--<div class="bor-line"></div>-->
+                    <!--<a href="/joinus/">加入我们</a>-->
+                    <!--<div class="bor-line"></div>-->
+                    <!--<a href="/customres/">企业用户</a>-->
+                    <!--<div class="bor-line"></div>-->
+                    <!--<a href="/useragreement/" class="nob">用户使用协议</a>-->
+                <!--</div>-->
+                <div class="footer-beizhu">Copyright © 2017 北京宏锋信息科技有限公司 京ICP备1526311707号-1</div>
+            </div>
+            <div class="footer-weixin">
+                <div class="bt-example-popover">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <div style="padding: 7px">
+                            <figure class="erweima-logo-icon"></figure>
+                        </div>
+                    </div>
+                </div>
+                <figure class="weixin-logo-icon"></figure>
+            </div>
+            <!--<div class="footer-weixin">-->
+                <!--<div class="bt-example-popover">-->
+                    <!--<div class="popover top">-->
+                        <!--<div class="arrow"></div>-->
+                        <!--<div style="padding: 7px">-->
+                            <!--<figure class="erweimaapp-logo-icon"></figure>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<figure class="shouji-logo-icon"></figure>-->
+            <!--</div>-->
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,26 @@
+<div class="global" style="min-height: 750px;">
+	<!--<div class="company-dynamics-banner">-->
+		<!--<div class="container">-->
+			<!--<div class="row" style="position: relative;">-->
+				<!--<img src="{{data.newsInfo.newsImgUrl}}" class="img-responsive" id="myimg">-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+	<div class="container">
+		<div class="row">
+			<div class="company_dynamics">
+				<dl>
+					<dt><span>{{data.newsInfo.createTime}}</span><span>{{data.newsInfo.createDate}}</span></dt>
+					<dd style="border: none;">
+						<h3 style="font-size: 20px; margin: 0;">
+							<b>【蒙古大营动态】{{data.newsInfo.newsTitle}}</b>
+						</h3>
+						<div class="company-cont-info">
+							<p ng-bind-html="msg | to_trusted"></p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>

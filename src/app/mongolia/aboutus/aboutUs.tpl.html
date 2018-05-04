@@ -1,0 +1,173 @@
+<section id="main-slider" class="carousel">
+    <div class="carousel-inner">
+        <div class="item" ng-repeat="slideShowInfo in data.slideShowList track by $index"
+             ng-class="{active:isActive === $index}">
+            <div class="container">
+                <div class="carousel-content">
+                    <div class="title">
+                        <h1>{{slideShowInfo.newsTitle}}</h1>
+                        <p class="lead"></p>
+                    </div>
+                    <div class="pic">
+                        <a href="/home/news/newsInfo/{{slideShowInfo.newsId}}" style="cursor:pointer;"><img
+                                style="width: 100%" src="{{slideShowInfo.newsImgUrl}}"
+                                alt="{{slideShowInfo.newsTitle}}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.carousel-inner-->
+    <a class="prev" href="#main-slider" data-slide="prev"><i class="glyphicon glyphicon-menu-left"></i></a>
+    <a class="next" href="#main-slider" data-slide="next"><i class="glyphicon glyphicon-menu-right"></i></a>
+</section>
+
+<div class="container" style="margin-bottom: 50px">
+    <div class="title-comm">
+        <h3 class="welinain">蒙古大营服务团队</h3>
+        <p class="line"></p>
+    </div>
+    <div class="row">
+        <div class=" app-none" style="position:relative;">
+            <div class="mb-describe hbox box-v-center">
+                <div class="col-md-8" style="padding:0">
+                    <div id="mb-ibox" class="mb-ibox ">
+                        <div class=" animated ShowBgUp"  ng-repeat="teamInfo in teamData.teamInfoList track by $index">
+                            <a  ng-class="{cur:isCur === $index}">
+                                <img src="{{teamInfo.teamImageUrl}}"
+                                     class="img-responsive" style="width: 100%">
+                            </a>
+                        </div>
+                        <!--<a class="move">-->
+                        <!--<div class=" animated ShowBgUp"><img src="/images/xietiaozhuanyuan.jpg"-->
+                        <!--class="img-responsive"></div>-->
+                        <!--</a>-->
+                        <!--<a class="cur">-->
+                        <!--<div class=" animated ShowBgUp"><img src="/images/jiatingyisheng.jpg"-->
+                        <!--class="img-responsive"></div>-->
+                        <!--</a>-->
+                        <!--<a class="">-->
+                        <!--<div class=" animated ShowBgUp"><img src="/images/tuhuandaifu.jpg"-->
+                        <!--class="img-responsive"></div>-->
+                        <!--</a>-->
+                    </div>
+                </div>
+                <div id="mb-itxt" class="col-md-4">
+                    <div style="display: none;" class="slide-itxt"
+                         ng-repeat="teamInfo in teamData.teamInfoList track by $index">
+                        <div class="kePublic-rightdiv">
+                            <div class="jiankangguwen-ico animated animateUp delay_1"></div>
+                            <div class="tuandui-title">
+                                <div class="animated animateUp delay_2">{{teamInfo.teamName}}</div>
+                            </div>
+                            <div class="kePublic-cont-info animated animateUp delay_3">
+                                {{teamInfo.teamDescribe}}
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div style="display: none;" class="slide-itxt">-->
+                    <!--<div class="kePublic-rightdiv">-->
+                    <!--<div class="xietiaozhuanyuan-ico  animated animateUp delay_1"></div>-->
+                    <!--<div class="tuandui-title">-->
+                    <!--<div class="animated animateUp delay_2">医疗协调专员</div>-->
+                    <!--</div>-->
+                    <!--<div class="kePublic-cont-info animated animateUp delay_3">-->
+                    <!--您与家人的医疗服务协调顾问，拥有多年临床工作背景和分诊经验，给予您和家人必要的就医指导，帮助您选择适需的科室就医、获得专科医生线上预诊服务，或为您连接您所需的医疗服务-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="display: block;" class="slide-itxt">-->
+                    <!--<div class="kePublic-rightdiv">-->
+                    <!--<div class="jiatingyisheng-ico  animated animateUp delay_1"></div>-->
+                    <!--<div class="tuandui-title">-->
+                    <!--<div class="animated animateUp delay_2">途欢家庭医生</div>-->
+                    <!--</div>-->
+                    <!--<div class="kePublic-cont-info animated animateUp delay_3">-->
+                    <!--您与家人的健康守门人。解决您与家庭日常大多数的医疗需求及慢性疾病稳定期的治疗、随访与管理。在途欢健康管理平台与健康顾问支持下，协助您完成更精准，更有价值的诊疗-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="display: none;" class="slide-itxt">-->
+                    <!--<div class="kePublic-rightdiv">-->
+                    <!--<div class="tuhuandaifu-ico  animated animateUp delay_1"></div>-->
+                    <!--<div class="tuandui-title">-->
+                    <!--<div class="animated animateUp delay_2">途欢大夫</div>-->
+                    <!--</div>-->
+                    <!--<div class="kePublic-cont-info animated animateUp delay_3">-->
+                    <!--如您与家人患有慢性疾病，定期为您连接三甲医院专科医生，并评估指导您的诊疗方案。当家庭发生临床医疗需求，将为您推荐并连接最适宜的医生与专家，确保获得更优的医疗解决方案-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <ul id="mb-inav" class="mb-inav-about ">
+                <li ng-repeat="teamInfo in teamData.teamInfoList track by $index">
+                    <div class="item-li">
+                    </div>
+                </li>
+                <!--<li>-->
+                <!--<div class="item-li">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="item-li cur">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="item-li">-->
+                <!--</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="app-none">
+    <div style="background: url(/images/about-yuanjing.jpg) 50% 0%; height: 420px;">
+        <div class="container">
+            <div class="row">
+                <div class="tuhuanyuanjing" style="text-align: center; color: rgba(255, 255, 255, 0.8)">
+                    <figure class="thyj-logo-icon"></figure>
+                    <p class="text-white" style="margin-top: 3.2%;">
+                        蒙古大营，是近年升起的一颗新星。是经内蒙古自治区旅局批准。工商局正式注册，有着独立法人资格的专业旅行企业。经营许可证书：L-NMG00870。主要承受各国旅游者来蒙古大营旅游的订房、会议、商务考察、特色旅自助游等业务和所有活动。同时从事蒙古大营的旅游者到全国各地旅游。以严谨的作风、专业的操作、过硬的质量、合理的价格、优良的信誉与国内众多的旅行社、酒店、等旅游相关机构建立了良好的业务合作关系。拥有一批训练有素、经验有素、热情周到的管理人员。分别有外联部；计调部；财务部与办公室。
+                        这支经验丰富、年轻、高素质及高度敬业精神的员工队伍。为不同行业，层次的旅游者精心设计了不同标准、等级的旅游线路，亦可根据不同要求，安排各种开拓视野的特色观光活动，为来蒙古大营草原观光的游客提供全方位的服务。
+                        非凡之旅的宗旨；优质服务，宾客至上，真诚合作，信誉第一
+                        旅游是艺术，旅游是文化，旅游是高品味的生活方式；一次合作，终身为友。全体员工期待着为您服务！蒙古大营草原的非凡之旅等待您的光临！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="title-comm">
+        <h3 class="welinain">联系我们</h3>
+        <p class="line"></p>
+        <p class="linh25 f12">蒙古大营，以最优质的服务团体来为您服务</p>
+    </div>
+    <div class="row contactus">
+        <div class="col-lg-6  small-12">
+            <div class="tcenter contactus-item">
+                <figure class="contact-kefu ac-figure-icon"></figure>
+                <div>
+                    <h4>联系客服</h4>
+                    <p class="f12">电话：15911184548</p>
+                    <p class="f12">邮箱：jizefeng311@qq.com</p>
+                    <p class="f12">工作时间：09：00~18：00（周一到周日）</p>
+                </div>
+            </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-6 small-12">
+            <div class="tcenter contactus-item">
+                <figure class="contact-dizhi ac-figure-icon"></figure>
+                <div>
+                    <h4>公司地址</h4>
+                    <p class="f12">内蒙古自治区乌兰察布察哈尔右翼中旗辉腾锡勒草原</p>
+                    <p class="f12">邮编：013550</p>
+                    <!--<p class="f12">传真：028-83226095</p>-->
+                </div>
+            </div>
+        </div><!-- /.col-lg-4 -->
+    </div>
+    <div class="gray-line"></div>
+</div>

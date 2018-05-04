@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="app-none">
+        <div class="title-comm">
+            <h3 class="welinain">反馈意见</h3>
+            <p class="line"></p>
+            <p class="mtop40 mb8">感谢体验蒙古大营服务</p>
+            <p class="linh25">您宝贵的建议是蒙古大营前进的动力，我们期待您的反馈和建议</p>
+        </div>
+        <div class="feedback">
+            <div class="feedback-l">
+                <img src="/images/wKgB4lIv_2SAOsFdAAgp4rhW_PU39.jpeg" class="img-responsive">
+            </div>
+            <form class="form-horizontal" name="myForm" ng-submit="commitForm(myForm);">
+                <div class="feedback-r">
+                    <div class="feedback-submit-con">
+                        <input type="text" class="inputdiv form-control" ng-model="data.mcUserName" required
+                               ng-required="true"
+                               placeholder="请输入您的名称"/>
+                        <input type="text" class="inputdiv form-control" ng-model="data.mcContactWay" required
+                               ng-required="true"
+                               placeholder="请输入邮箱或电话号码，便于我们联系您"/>
+                        <div star rating-value="ratingVal" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" style="margin-bottom: 10px"></div>
+                        <!--<div>-->
+                            <!--Max: <input type="number" name="input" ng-model="max" min="0" max="99" required>-->
+                            <!--<p>current value: {{ratingVal}}</p>-->
+                            <!--<p>hover on : {{hoverVal?hoverVal:"none"}}</p>-->
+                            <!--<p>readonly : <input type="checkbox"-->
+                                                 <!--ng-model="readonly"></p>-->
+                        <!--</div>-->
+                        <textarea class="form-control" ng-model="data.mcDescribe" required ng-required="true"
+                                  placeholder="请输入您的建议与评价"></textarea>
+                        <button type="submit" class="btn btn-primary btn-sm width100">提交</button>
+                        <button type="reset" class="btn btn-default btn-sm width100 ml15">重置</button>
+                        <!--<a href="javascript:AddFeedback()" id="btn-submit" class="global-btn" data-submit="1">提交</a>-->
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="demoBox ">
+        <div name="effect10" id="effect10" class="hd"><h3><span>游客.</span>反馈记录</h3></div>
+        <div class="bd">
+            <div class="txtMarquee-top" style="margin-bottom: 10px" ng-repeat="messageComment in data.messageComment">
+                <div star rating-value="messageComment.mcGrade" max="max" on-hover="onHover" on-leave="onLeave" readonly="true" ></div>
+                <div style="margin-left: 10px">
+                    <h3>
+                        <span style="margin-right: 20px"><b>{{messageComment.mcUserName}}</b></span>
+                        {{messageComment.createOn| date:'yyyy-MM-dd HH:mm:ss'}}
+                    </h3>
+                </div>
+                <div style="margin-left: 140px;margin-top: 5px;">
+                    <span style="font-size: 14px"><b>详情：</b>{{messageComment.mcDescribe}}</span>
+                </div>
+                <div style="margin-left: 170px;margin-top: 20px;margin-bottom: 10px">
+                    <span style="color: #f09"><b>回复：</b>{{messageComment.reply}}</span>
+                </div>
+            </div>
+        </div><!-- bd E -->
+    </div>
+</div>

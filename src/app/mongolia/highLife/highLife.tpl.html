@@ -1,0 +1,85 @@
+<div class="container" style="margin-bottom: 50px">
+    <div class="title-comm">
+        <h3 class="welinain">我们的美景</h3>
+        <p class="line"></p>
+        <p class="mtop40">
+            没有到过草原，你就不能明了“天苍苍，野茫茫，风吹草低见牛羊”的那份寥廓和深远；没有到过草原，你就不知道‘天穹压落、云欲擦肩’的那份豪迈和洒脱；没有到过草原，你就永远不能体会在大自然的雄奇和伟大面前，你的灵魂是一种怎样地颤动和震撼！</p>
+        <p class="linh25">
+            夏日的辉腾锡勒草原弥漫着花草清香。蓝天白云，暖暖的阳光照在身上，一切都那么美好。当你静静躺在秀美的草原之上，耳畔传来远处悠扬的马头琴声，犹如天籁，往日的烦躁在这一刻烟消云散。在绿色的大海之上心情是如此恬静，这里会是你永远心驰神往的地方。</p>
+    </div>
+
+    <div class=" app-none" style="position:relative;">
+        <div class="row">
+            <div class="col-lg-12" style="margin-bottom: 30px" ng-repeat="viewspot in viewSpotData.viewSpotInfoList | limitTo: 12">
+                <div class="col-lg-4" style="text-align: -webkit-center;">
+                        <span class="imageUrl" style="background:url({{viewspot.viewSpotImageUrl}}) no-repeat center center;background-size:cover;">
+                            <!--<img src="{{viewspot.viewSpotImageUrl}}">-->
+                        </span>
+                    <p style="text-align: -webkit-center;">{{viewspot.viewSpotTitle}}</p>
+                </div>
+                <div class="col-lg-8">
+                    <span>{{viewspot.viewSpotDescribe}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="container" style="margin-bottom: 50px">
+    <div class="title-comm">
+        <h3 class="welinain">我们的美食</h3>
+        <p class="line"></p>
+        <p class="mtop40">蒙古包，蒙语里包即为家的意思，蒙古包自匈奴时代起沿用至今，从蒙古族的实用型建筑，演化成了今天的景观型建筑，蒙古包是蒙族文化的象征。</p>
+        <p class="linh25">蒙古包顶部呈圆拱形，不仅起到了大方美观的作用，而且在雨雪天气包顶不易积水，且圆拱形坚固耐用，可抗八九级大风，且蒙古包易搭建和拆卸，满足了古代的战争需求。</p>
+        <p class="linh25">蒙族人的搭建的蒙古包有特制的木架做“哈那”，即外部围栏支撑，围上多层羊毛毡，蒙古包的羊毛毡取自羊身上最柔软的毛，经过多人千次的捶打制成，具有很好的耐寒性和保湿性。</p>
+        <p class="linh25">蒙古包顶部开有窗户，易于采光和通风，蒙古包的门开向东南方向，有效地避免了西伯利亚寒流的侵蚀。</p>
+        <p class="linh25">素来具有高超模仿能力的中国人在蒙古包的发展上有了更深的造诣，今天的蒙古包已经不仅仅是御寒的作用了，更朝着美观大方、舒适耐用、多元化的方向发展。
+            蒙古包的支撑结构首先发生了革命性的变化，由木质结构逐步演变为钢架支撑，钢架不仅在价格上便宜，而且更坚固耐用，木料比钢架也更易于腐蚀。
+            其次外部采用了保暖性更好的防雨帆布，内部围上多层羊毛毡在配上明黄色考究的装饰，给人一种舒适感，在夜晚温度下降的坝上草原也起到了很好的保暖效果。</p>
+    </div>
+
+    <div class=" app-none" style="position:relative;">
+        <div class="row">
+            <div class="col-lg-12" style="margin-bottom: 30px" ng-repeat="food in viewSpotData.foodInfoList | limitTo: 12">
+                <div class="col-lg-4" style="text-align: -webkit-center;">
+                        <span class="imageUrl" style="background:url({{food.viewSpotImageUrl}}) no-repeat center center;background-size:cover;">
+                            <!--<img src="{{viewspot.viewSpotImageUrl}}">-->
+                        </span>
+                    <p style="text-align: -webkit-center;">{{food.viewSpotTitle}}</p>
+                </div>
+                <div class="col-lg-8">
+                    <span>{{food.viewSpotDescribe}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="container" style="margin-bottom: 50px">
+    <div class="title-comm">
+        <h3 class="welinain">我们的娱乐</h3>
+        <p class="line"></p>
+        <p class="mtop40">
+            没有到过草原，你就不能明了“天苍苍，野茫茫，风吹草低见牛羊”的那份寥廓和深远；没有到过草原，你就不知道‘天穹压落、云欲擦肩’的那份豪迈和洒脱；没有到过草原，你就永远不能体会在大自然的雄奇和伟大面前，你的灵魂是一种怎样地颤动和震撼！</p>
+        <p class="linh25">
+            夏日的辉腾锡勒草原弥漫着花草清香。蓝天白云，暖暖的阳光照在身上，一切都那么美好。当你静静躺在秀美的草原之上，耳畔传来远处悠扬的马头琴声，犹如天籁，往日的烦躁在这一刻烟消云散。在绿色的大海之上心情是如此恬静，这里会是你永远心驰神往的地方。</p>
+    </div>
+
+    <div class=" app-none" style="position:relative;">
+        <div class="row">
+            <div class="col-lg-12" style="margin-bottom: 30px" ng-repeat="disp in viewSpotData.dispInfoList | limitTo: 12">
+                <div class="col-lg-4" style="text-align: -webkit-center;">
+                        <span class="imageUrl" style="background:url({{disp.viewSpotImageUrl}}) no-repeat center center;background-size:cover;">
+                            <!--<img src="{{viewspot.viewSpotImageUrl}}">-->
+                        </span>
+                    <p style="text-align: -webkit-center;">{{disp.viewSpotTitle}}</p>
+                </div>
+                <div class="col-lg-8">
+                    <span>{{disp.viewSpotDescribe}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+

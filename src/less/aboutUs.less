@@ -1,0 +1,345 @@
+.title-comm {
+  text-align: center;
+  margin: 100px 0 80px
+}
+.welinain {
+  text-align: center
+}
+.line {
+  border-top: 1px solid #3bbe7a;
+  width: 30px;
+  margin: 20px auto 40px
+}
+.mtop40 {
+  margin-top: 40px
+}
+.linh25 {
+  line-height: 25px
+}
+.mb-describe {
+  background-color: rgba(59, 190, 122, .85);
+  padding: 0;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+.hbox.box-v-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mb-ibox {
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mb-ibox a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.mb-ibox a:first-child {
+  z-index: 6;
+}
+
+.mb-ibox a.move {
+  z-index: 7;
+}
+
+.mb-ibox a.cur {
+  z-index: 8;
+  position: relative;
+}
+.mb-ibox div {
+  background-color: #f2f2f2
+}
+.animateUpDown {
+  -webkit-animation-name: animateUpDown;
+  -o-animation-name: animateUpDown;
+  animation-name: animateUpDown;
+  -webkit-animation-duration: 900ms;
+  -o-animation-duration: 900ms;
+  animation-duration: 900ms;
+}
+
+@-webkit-keyframes animateUpDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-o-keyframes animateUpDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes animateUpDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+.animateUp {
+  -webkit-animation-name: animateUp;
+  -o-animation-name: animateUp;
+  animation-name: animateUp;
+  -webkit-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+  -o-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+  animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+}
+
+@-webkit-keyframes animateUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-o-keyframes animateUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes animateUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+.cur .ShowBgUp {
+  -webkit-animation-name: ShowBgUp;
+  -o-animation-name: ShowBgUp;
+  animation-name: ShowBgUp;
+  -webkit-animation-duration: 1400ms;
+  -o-animation-duration: 1400ms;
+  animation-duration: 1400ms;
+  -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+  -o-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+  animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+}
+
+@-webkit-keyframes ShowBgUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes ShowBgUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowBgUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.kePublic-rightdiv {
+  padding: 0 5%;
+  text-align: center;
+  margin-top: 27% \9;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .kePublic-rightdiv {
+    padding: 0;
+  }
+}
+.tuandui-title {
+  font-size: 18px;
+  margin: 9% 0 5%;
+}
+.kePublic-cont-info {
+  font-size: 14px;
+  color: rgba(255, 255, 255, .8);
+}
+
+.move .ShowBgUp {
+  opacity: 1;
+  z-index: 9;
+}
+.cur .ShowBgUp {
+  z-index: 10;
+}
+.mb-inav-about {
+  z-index: 10 !important;
+  width: 210px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 4.5%;
+  padding-top: 4px;
+}
+.mb-inav-about li {
+  float: left;
+}
+.mb-inav-about li div {
+  width: 40px;
+  height: 2px;
+  background-color: rgba(170, 170, 170, .5);
+  margin: 2px 10px 0 0;
+}
+.mb-inav-about li div.cur {
+  background-image: url("/images/switch.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 8px;
+  background-size: 40px 8px;
+  background-color: transparent;
+  margin-top: -3px;
+}
+.tuhuanyuanjing {
+  margin-top: 9%
+}
+.thyj-logo-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/logo.png");
+  background-size: 100px 100px;
+  height: 100px;
+  width: 100px;
+  margin: auto
+}
+.tuhuanyuanjing p {
+  margin-bottom: 7px
+}
+@media (min-width: 1200px) {
+  .pc-none {
+    display: none
+  }
+}
+.large-3 {
+  width: 33.33333333%;
+  float: left
+}
+.tcenter {
+  text-align: center
+}
+.contactus-item {
+  margin-bottom: 100px
+}
+.ac-figure-icon {
+  margin-left: auto;
+  margin-right: auto
+}
+.contact-kefu {
+  background-repeat: no-repeat;
+  background-image: url("../images/contact-kefu.svg");
+  background-size: 110px 110px;
+  height: 110px;
+  width: 110px
+}
+.contact-dizhi {
+  background-repeat: no-repeat;
+  background-image: url("../images/contact-dizhi.svg");
+  background-size: 110px 110px;
+  height: 110px;
+  width: 110px
+}
+.contactus-item h4 {
+  margin-bottom: 20px;
+  margin-top: 30px
+}
+.contactus-item p {
+  margin: 0 0 5px
+}

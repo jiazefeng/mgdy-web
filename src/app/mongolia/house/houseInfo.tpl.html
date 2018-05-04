@@ -1,0 +1,34 @@
+<div class="container" style="padding-top: 100px;padding-bottom: 50px;">
+    <div class="row">
+        <div class="form-group  col-lg-9">
+            <label class="col-sm-2 control-label">房屋类型</label>
+            <div class="col-sm-9">
+                {{data.houseInfo.houseType}}
+            </div>
+        </div>
+        <div class="form-group  col-lg-9">
+            <label class="col-sm-2 control-label">房屋原价</label>
+            <div class="col-sm-9">
+                {{data.houseInfo.housePrice}}
+            </div>
+        </div>
+        <div class="form-group  col-lg-9">
+            <label class="col-sm-2 control-label">团购价</label>
+            <div class="col-sm-9">
+                {{data.houseInfo.groupBuyingPrice}}
+            </div>
+        </div>
+        <div class="form-group  col-lg-9">
+            <label class="col-sm-2 control-label">描述</label>
+            <div class="col-sm-9">
+                {{data.houseInfo.houseDescribe}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4" style="text-align: -webkit-center;" ng-repeat="houseImageInfo in data.houseInfo.houseImageList">
+            <span class="imageUrl" style="background:url({{houseImageInfo}}) no-repeat center center;background-size:cover;"></span>
+            <!--<img src="{{houseImageInfo}}" class="img-thumbnail" style="width: 100%">-->
+        </div>
+    </div>
+</div>
